@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import KitchenSinkCanvas from "./components/kitchenSinkCanvas";
 
 function App() {
 
@@ -10,6 +8,7 @@ function App() {
       <p>
           meow
       </p>
+      <KitchenSinkCanvas/>
     </>
   )
 }
