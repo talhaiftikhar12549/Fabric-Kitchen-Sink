@@ -5,21 +5,13 @@ function App() {
 
     return (
         <>
-            <h1 className="text-3xl font-bold underline">
+            <h1 className="text-3xl font-bold underline m-4">
                 Fabric js Kitchen Sink
             </h1>
+
             <div>
-                <div>
-
-                </div>
-                <div>
-                    <Meow/>
-                </div>
-                <div>
-
-                </div>
+                <Meow/>
             </div>
-
         </>
     )
 }
