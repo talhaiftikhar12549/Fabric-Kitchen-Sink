@@ -102,35 +102,32 @@
 //
 // export default Meow;
 
-import React from "react"
+
 import * as fabric from 'fabric';
-import { useFabricJSEditor } from 'fabricjs-react';
 import {useEffect} from "react"
+
 let canvas;
 
-export default function Meow()
-{
+export default function Meow() {
     useEffect(() => {
-        if(!canvas) {
+        if (!canvas) {
             canvas = new fabric.Canvas("canvas", {
-                backgroundColor : "#000000"
+                backgroundColor: "#cccccc"
             });
-            window.canvas = canvas;
-            canvas.add(
-                new fabric.Rect({ top: 100, left: 100, width: 50, height: 50, fill: '#f55' }),
-                new fabric.Circle({ top: 140, left: 230, radius: 75, fill: 'green' }),
-                new fabric.Triangle({ top: 300, left: 210, width: 100, height: 100, fill: 'white' })
-            );
-
-
-            canvas.backgroundColor="black";
+        //     window.canvas = canvas;
+        //     canvas.add(
+        //         new fabric.Circle({top: 140, left: 230, radius: 75, fill: 'green'}),
+        //         new fabric.Rect({top: 100, left: 100, width: 50, height: 50, fill: '#f55'}),
+        //         new fabric.Triangle({top: 300, left: 210, width: 100, height: 100, fill: 'white'})
+        // )
+            // canvas.backgroundColor = "black";
             canvas.renderAll();
         }
-    },[])
-    return(
+    }, [])
+    return (
         <>
-        <canvas id="canvas" width="500" height="300">
-        </canvas>
+            <canvas id="canvas" width="500" height="300">
+            </canvas>
         </>
     )
 }
