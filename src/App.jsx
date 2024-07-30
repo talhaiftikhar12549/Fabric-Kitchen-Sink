@@ -1,5 +1,5 @@
 import './App.css'
-import KitchenSinkCanvas from "./components/kitchenSinkCanvas";
+import Meow from "./components/kitchenSinkCanvas";
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
       <p>
           meow
       </p>
-      <KitchenSinkCanvas/>
+      <Meow />
     </>
   )
 }
